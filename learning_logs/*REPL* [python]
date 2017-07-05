@@ -1,0 +1,24 @@
+Python 2.7.13 (default, Jan 19 2017, 14:48:08) 
+[GCC 6.3.0 20170118] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> website = 'http://www.python.org'
+>>> website[-3:] = 'comn'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> format = 'Hello, %s, %s enough for ya?'
+>>> values = ('world', 'hot')
+>>> print(format%values)
+Hello, world, hot enough for ya?
+>>> format = 'Pi with three decimals:%.3f'
+>>> from math import Pi
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: cannot import name Pi
+>>> from math import pi
+>>> print(format%pi)
+Pi with three decimals:3.142
+>>> 'With a moo-moo here, and a moo-moo there'.find('moo')
+7
+>>> title = "Monty Python's Flying Circus" 
+>>> title.find('Monkey')
